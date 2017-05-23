@@ -1,0 +1,219 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-slack_lesser_than 50.000000
+	-max_paths 3
+	-sort_by slack
+Design : simon32_64
+Version: K-2015.06-SP1
+Date   : Wed Nov 30 21:35:28 2016
+****************************************
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: k0_reg[23][1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                100.000000 100.000000 f
+  reset (in)                                          0.000000 & 100.000000 f
+  FE_OFC18072_reset/Y (INVx11_ASAP7_75t_R)            4.820892 & 104.820892 r
+  FE_OFC18079_reset/Y (INVx13_ASAP7_75t_R)            8.298462 & 113.119354 f
+  FE_OFC34870_reset/Y (BUFx4_ASAP7_75t_R)             15.162781 &
+                                                                 128.282135 f
+  FE_OFC25556_reset/Y (BUFx10_ASAP7_75t_R)            11.904175 &
+                                                                 140.186310 f
+  FE_OFC30261_reset/Y (BUFx12f_ASAP7_75t_R)           8.271484 & 148.457794 f
+  FE_OFC35700_reset/Y (INVx3_ASAP7_75t_R)             5.289825 & 153.747620 r
+  FE_OFC37961_reset/Y (INVx6_ASAP7_75t_R)             8.733246 & 162.480865 f
+  FE_OFC25643_reset/Y (BUFx12f_ASAP7_75t_R)           10.260681 &
+                                                                 172.741547 f
+  FE_OFC35892_reset/Y (BUFx12f_ASAP7_75t_R)           8.161591 & 180.903137 f
+  FE_OFC18107_reset/Y (BUFx12f_ASAP7_75t_R)           8.456665 & 189.359802 f
+  FE_OFC35985_reset/Y (BUFx12f_ASAP7_75t_R)           8.634613 & 197.994415 f
+  FE_OFC25715_reset/Y (BUFx12f_ASAP7_75t_R)           8.970505 & 206.964920 f
+  FE_OFC36046_reset/Y (BUFx12f_ASAP7_75t_R)           8.597443 & 215.562363 f
+  FE_OFC22995_reset/Y (BUFx12f_ASAP7_75t_R)           8.669067 & 224.231430 f
+  FE_OFC36088_reset/Y (BUFx6f_ASAP7_75t_R)            8.795715 & 233.027145 f
+  FE_OFC25774_reset/Y (BUFx12f_ASAP7_75t_R)           8.131607 & 241.158752 f
+  FE_OFC30005_reset/Y (BUFx12f_ASAP7_75t_R)           7.784180 & 248.942932 f
+  FE_OFC38661_reset/Y (BUFx12f_ASAP7_75t_R)           9.410278 & 258.353210 f
+  FE_OFC42113_reset/Y (BUFx12f_ASAP7_75t_R)           10.565781 &
+                                                                 268.918991 f
+  FE_OFC18138_reset/Y (INVx11_ASAP7_75t_R)            6.685898 & 275.604889 r
+  FE_OFC18176_reset/Y (INVx5_ASAP7_75t_R)             9.865265 & 285.470154 f
+  FE_OFC18235_reset/Y (INVx1_ASAP7_75t_R)             15.940552 &
+                                                                 301.410706 r
+  FE_OFC18301_reset/Y (INVx2_ASAP7_75t_R)             24.473221 &
+                                                                 325.883926 f
+  FE_OFC18379_reset/Y (INVx1_ASAP7_75t_R)             38.403763 &
+                                                                 364.287689 r
+  FE_OFC18465_reset/Y (INVx4_ASAP7_75t_R)             26.886993 &
+                                                                 391.174683 f
+  g56839/Y (NOR2x1_ASAP7_75t_R)                       25.590271 &
+                                                                 416.764954 r
+  FE_OFC41788_n_5147/Y (BUFx12_ASAP7_75t_R)           19.320709 &
+                                                                 436.085663 r
+  k0_reg[23][1]/D (DFFHQNx4_ASAP7_75t_R)              0.041748 & 436.127411 r
+  data arrival time                                              436.127411
+
+  clock clk (rise edge)                               442.000000 442.000000
+  clock network delay (ideal)                         0.000000   442.000000
+  clock reconvergence pessimism                       0.000000   442.000000
+  k0_reg[23][1]/CLK (DFFHQNx4_ASAP7_75t_R)                       442.000000 r
+  library setup time                                  -5.711595  436.288405
+  data required time                                             436.288405
+  ------------------------------------------------------------------------------
+  data required time                                             436.288405
+  data arrival time                                              -436.127411
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    0.160995
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: k0_reg[22][1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                100.000000 100.000000 f
+  reset (in)                                          0.000000 & 100.000000 f
+  FE_OFC18072_reset/Y (INVx11_ASAP7_75t_R)            4.820892 & 104.820892 r
+  FE_OFC18079_reset/Y (INVx13_ASAP7_75t_R)            8.298462 & 113.119354 f
+  FE_OFC34870_reset/Y (BUFx4_ASAP7_75t_R)             15.162781 &
+                                                                 128.282135 f
+  FE_OFC25556_reset/Y (BUFx10_ASAP7_75t_R)            11.904175 &
+                                                                 140.186310 f
+  FE_OFC30261_reset/Y (BUFx12f_ASAP7_75t_R)           8.271484 & 148.457794 f
+  FE_OFC35700_reset/Y (INVx3_ASAP7_75t_R)             5.289825 & 153.747620 r
+  FE_OFC37961_reset/Y (INVx6_ASAP7_75t_R)             8.733246 & 162.480865 f
+  FE_OFC25643_reset/Y (BUFx12f_ASAP7_75t_R)           10.260681 &
+                                                                 172.741547 f
+  FE_OFC35892_reset/Y (BUFx12f_ASAP7_75t_R)           8.161575 & 180.903122 f
+  FE_OFC18107_reset/Y (BUFx12f_ASAP7_75t_R)           8.456665 & 189.359787 f
+  FE_OFC35985_reset/Y (BUFx12f_ASAP7_75t_R)           8.634613 & 197.994400 f
+  FE_OFC25715_reset/Y (BUFx12f_ASAP7_75t_R)           8.970505 & 206.964905 f
+  FE_OFC36046_reset/Y (BUFx12f_ASAP7_75t_R)           8.597443 & 215.562347 f
+  FE_OFC22995_reset/Y (BUFx12f_ASAP7_75t_R)           8.669067 & 224.231415 f
+  FE_OFC36088_reset/Y (BUFx6f_ASAP7_75t_R)            8.795715 & 233.027130 f
+  FE_OFC25774_reset/Y (BUFx12f_ASAP7_75t_R)           8.131607 & 241.158737 f
+  FE_OFC30005_reset/Y (BUFx12f_ASAP7_75t_R)           7.784180 & 248.942917 f
+  FE_OFC38661_reset/Y (BUFx12f_ASAP7_75t_R)           9.410278 & 258.353195 f
+  FE_OFC25793_reset/Y (BUFx12f_ASAP7_75t_R)           8.882004 & 267.235199 f
+  FE_OFC18178_reset/Y (INVx1_ASAP7_75t_R)             10.259399 &
+                                                                 277.494598 r
+  FE_OFC18238_reset/Y (INVx4_ASAP7_75t_R)             15.172043 &
+                                                                 292.666641 f
+  FE_OFC18305_reset/Y (INVx2_ASAP7_75t_R)             10.435120 &
+                                                                 303.101761 r
+  FE_OFC18382_reset/Y (INVx5_ASAP7_75t_R)             10.039932 &
+                                                                 313.141693 f
+  FE_OFC18468_reset/Y (INVx3_ASAP7_75t_R)             9.913818 & 323.055511 r
+  FE_OFC18552_reset/Y (INVx2_ASAP7_75t_R)             15.527679 &
+                                                                 338.583191 f
+  FE_OFC18627_reset/Y (INVx2_ASAP7_75t_R)             17.729614 &
+                                                                 356.312805 r
+  FE_OFC18687_reset/Y (INVx4_ASAP7_75t_R)             23.307587 &
+                                                                 379.620392 f
+  FE_OFC40277_reset/Y (HB1xp67_ASAP7_75t_R)           19.735962 &
+                                                                 399.356354 f
+  g57174/Y (NOR2xp33_ASAP7_75t_R)                     31.948792 &
+                                                                 431.305145 r
+  k0_reg[22][1]/D (DFFHQNx4_ASAP7_75t_R)              0.042206 & 431.347351 r
+  data arrival time                                              431.347351
+
+  clock clk (rise edge)                               442.000000 442.000000
+  clock network delay (ideal)                         0.000000   442.000000
+  clock reconvergence pessimism                       0.000000   442.000000
+  k0_reg[22][1]/CLK (DFFHQNx4_ASAP7_75t_R)                       442.000000 r
+  library setup time                                  -9.475119  432.524881
+  data required time                                             432.524881
+  ------------------------------------------------------------------------------
+  data required time                                             432.524881
+  data arrival time                                              -431.347351
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    1.177530
+
+
+  Startpoint: reset (input port clocked by clk)
+  Endpoint: x_reg[7][1]
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  input external delay                                100.000000 100.000000 r
+  reset (in)                                          0.000000 & 100.000000 r
+  FE_OFC18071_reset/Y (INVx13_ASAP7_75t_R)            12.726379 &
+                                                                 112.726379 f
+  FE_PHC48700_FE_OFN18071_reset/Y (HB1xp67_ASAP7_75t_R)
+                                                      10.488739 &
+                                                                 123.215118 f
+  FE_OFC32548_reset/Y (INVxp67_ASAP7_75t_R)           9.341583 & 132.556702 r
+  FE_OFC18088_reset/Y (INVx3_ASAP7_75t_R)             7.586395 & 140.143097 f
+  FE_OFC34067_reset/Y (BUFx6f_ASAP7_75t_R)            10.371307 &
+                                                                 150.514404 f
+  FE_OFC25224_reset/Y (BUFx12f_ASAP7_75t_R)           7.568237 & 158.082642 f
+  FE_PHC48709_FE_OFN25224_reset/Y (BUFx8_ASAP7_75t_R) 12.253738 &
+                                                                 170.336380 f
+  FE_OFC34550_reset/Y (BUFx12f_ASAP7_75t_R)           8.802643 & 179.139023 f
+  FE_OFC28261_reset/Y (BUFx12f_ASAP7_75t_R)           9.362091 & 188.501114 f
+  FE_OFC18129_reset/Y (INVx6_ASAP7_75t_R)             7.008957 & 195.510071 r
+  FE_OFC35343_reset/Y (BUFx10_ASAP7_75t_R)            10.687592 &
+                                                                 206.197662 r
+  FE_OFC31627_reset/Y (BUFx6f_ASAP7_75t_R)            7.557571 & 213.755234 r
+  FE_OFC35614_reset/Y (BUFx6f_ASAP7_75t_R)            8.162979 & 221.918213 r
+  FE_OFC18164_reset/Y (BUFx12f_ASAP7_75t_R)           7.735687 & 229.653900 r
+  FE_OFC29388_reset/Y (BUFx12f_ASAP7_75t_R)           7.396378 & 237.050278 r
+  FE_OFC23581_reset/Y (BUFx12f_ASAP7_75t_R)           7.880814 & 244.931091 r
+  FE_OFC29606_reset/Y (BUFx12f_ASAP7_75t_R)           8.127731 & 253.058823 r
+  FE_OFC25732_reset/Y (BUFx12f_ASAP7_75t_R)           7.443588 & 260.502411 r
+  FE_OFC29821_reset/Y (BUFx12f_ASAP7_75t_R)           8.475677 & 268.978088 r
+  FE_OFC36119_reset/Y (BUFx12f_ASAP7_75t_R)           9.393326 & 278.371414 r
+  FE_OFC18276_reset/Y (INVx11_ASAP7_75t_R)            4.833649 & 283.205063 f
+  FE_OFC18355_reset/Y (INVx13_ASAP7_75t_R)            11.401672 &
+                                                                 294.606735 r
+  FE_OFC18433_reset/Y (INVx13_ASAP7_75t_R)            8.529709 & 303.136444 f
+  FE_OFC18524_reset/Y (INVx2_ASAP7_75t_R)             21.124512 &
+                                                                 324.260956 r
+  FE_OFC18590_reset/Y (INVx2_ASAP7_75t_R)             19.195786 &
+                                                                 343.456741 f
+  FE_OFC18668_reset/Y (INVx1_ASAP7_75t_R)             29.923416 &
+                                                                 373.380157 r
+  FE_OFC18717_reset/Y (INVx1_ASAP7_75t_R)             17.593018 &
+                                                                 390.973175 f
+  FE_OFC18762_reset/Y (INVx2_ASAP7_75t_R)             16.411591 &
+                                                                 407.384766 r
+  g62040/Y (NOR2xp33_ASAP7_75t_R)                     12.157349 &
+                                                                 419.542114 f
+  x_reg[7][1]/D (DFFHQNx4_ASAP7_75t_R)                0.012817 & 419.554932 f
+  data arrival time                                              419.554932
+
+  clock clk (rise edge)                               442.000000 442.000000
+  clock network delay (ideal)                         0.000000   442.000000
+  clock reconvergence pessimism                       0.000000   442.000000
+  x_reg[7][1]/CLK (DFFHQNx4_ASAP7_75t_R)                         442.000000 r
+  library setup time                                  -16.602814 425.397186
+  data required time                                             425.397186
+  ------------------------------------------------------------------------------
+  data required time                                             425.397186
+  data arrival time                                              -419.554932
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    5.842255
+
+Warning: report_timing has satisfied the max_paths criteria. There are 72 further endpoints which have paths of interest with slack less than 50.000000 that were not considered when generating this report. (UITE-502)
+
+1
